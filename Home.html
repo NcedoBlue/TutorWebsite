@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutoring Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero {
+            height: 100vh;
+            background: url('https://thetutorresource.com/wp-content/uploads/2022/08/online-tutoring-benefits-768x576.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+        }
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+        .offer-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 20px 0;
+        }
+        footer a {
+            color: #ccc;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: white;
+        }
+         body { background: #f8fafc; }
+    .subject-btn { transition: transform .05s ease-in-out; }
+    .subject-btn:active { transform: scale(0.98); }
+    .rate-badge { font-weight: 600; }
+    .pricing-card { border-radius: 1rem; }
+    .modal-header { border-bottom: none; }
+    .pp { font-size: .9rem; opacity: .8; }
+    </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero text-center">
+    <div>
+        <h1>Empowering Students to Succeed</h1>
+        <p class="lead">Quality tutoring for Grades 1–12, online and face-to-face</p>
+        <a href="booking.html" class="btn btn-primary btn-lg mt-3">Make Booking</a>
+    </div>
+</section>
+
+<!-- About Us -->
+<section id="about" class="py-5 text-center container">
+    <h2>About Us</h2>
+    <p class="lead">We are dedicated to helping learners achieve academic excellence through personalized and engaging lessons, tailored to each student’s unique learning style.</p>
+</section>
+
+<!-- What We Offer -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">What We Offer</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card offer-card">
+                    <img src="https://th.bing.com/th/id/OIP.s-wNPOBgdKYEqLppU4yTrAHaEo?w=254&h=180&c=7&r=0&o=7&pid=1.7&rm=3" class="card-img-top" alt="Face-to-face lessons">
+                    <div class="card-body">
+                        <h5 class="card-title">Face-to-Face Lessons</h5>
+                        <p class="card-text">In-person tutoring for a more hands-on and interactive learning experience.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card offer-card">
+                    <img src="data:image/webp;base64,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" class="card-img-top" alt="Online lessons">
+                    <div class="card-body">
+                        <h5 class="card-title">Online Lessons</h5>
+                        <p class="card-text">Convenient learning from anywhere, with the same quality as in-person sessions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card offer-card">
+                    <img src="https://th.bing.com/th/id/OIP.3VARZJFFZm60yC20CBF9PwHaFY?w=238&h=180&c=7&r=0&o=5&pid=1.7" class="card-img-top" alt="Group packages">
+                    <div class="card-body">
+                        <h5 class="card-title">Group Packages</h5>
+                        <p class="card-text">Affordable small group sessions with personalized attention.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Courses -->
+<section class="py-5 container">
+    <h2 class="text-center mb-4">Courses Offered</h2>
+    <body>
+  <div class="container py-5">
+    <h1 class="mb-4 text-center">Choose a Subject</h1>
+
+    <!-- SUBJECT BUTTONS -->
+    <div class="row text-center g-3">
+      <div class="col-md-3"><a href="#" class="btn btn-outline-primary w-100 subject-btn" data-subject="Mathematics">Mathematics</a></div>
+      <div class="col-md-3"><a href="#" class="btn btn-outline-primary w-100 subject-btn" data-subject="English">English</a></div>
+      <div class="col-md-3"><a href="#" class="btn btn-outline-primary w-100 subject-btn" data-subject="Life Sciences">Life Sciences</a></div>
+      <div class="col-md-3"><a href="#" class="btn btn-outline-primary w-100 subject-btn" data-subject="Physical Sciences">Physical Sciences</a></div>
+      <div class="col-md-3"><a href="#" class="btn btn-outline-primary w-100 subject-btn" data-subject="Geography">Geography</a></div>
+      <div class="col-md-3"><a href="#" class="btn btn-outline-primary w-100 subject-btn" data-subject="Social Sciences">Social Sciences</a></div>
+      <div class="col-md-3"><a href="#" class="btn btn-outline-primary w-100 subject-btn" data-subject="Natural Sciences">Natural Sciences</a></div>
+      <div class="col-md-3"><a href="#" class="btn btn-outline-primary w-100 subject-btn" data-subject="Maths Literacy">Maths Literacy</a></div>
+    </div>
+  </div>
+
+  <!-- PRICING MODAL -->
+  <div class="modal fade" id="pricingModal" tabindex="-1" aria-labelledby="pricingModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <h2 class="modal-title h4" id="pricingModalLabel">Subject Pricing</h2>
+            <div class="text-muted">Subject: <span class="fw-semibold" id="modalSubject">—</span></div>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-4">
+            <!-- Grade 7–12 -->
+            <div class="col-lg-6">
+              <div class="card shadow-sm pricing-card h-100">
+                <div class="card-body">
+                  <h3 class="h5 mb-3">Grades 7–12</h3>
+
+                  <div class="mb-3">
+                    <h6 class="mb-2">Face-to-face (At home)</h6>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item d-flex justify-content-between align-items-center">One-on-one with tutor <span class="badge text-bg-primary rate-badge">R200</span></li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">2 learners package <span class="badge text-bg-primary rate-badge">R150 <span class="pp">pp</span></span></li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">3+ learners package <span class="badge text-bg-primary rate-badge">R120 <span class="pp">pp</span></span></li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h6 class="mb-2">Online lessons</h6>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item d-flex justify-content-between align-items-center">One-on-one with tutor <span class="badge text-bg-primary rate-badge">R170</span></li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">2 learners package <span class="badge text-bg-primary rate-badge">R150 <span class="pp">pp</span></span></li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">3+ learners package <span class="badge text-bg-primary rate-badge">R120 <span class="pp">pp</span></span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Grade 1–6 -->
+            <div class="col-lg-6">
+              <div class="card shadow-sm pricing-card h-100">
+                <div class="card-body">
+                  <h3 class="h5 mb-3">Grades 1–6</h3>
+
+                  <div class="mb-3">
+                    <h6 class="mb-2">Face-to-face (At home)</h6>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item d-flex justify-content-between align-items-center">One-on-one with tutor <span class="badge text-bg-success rate-badge">R170</span></li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">2 learners package <span class="badge text-bg-success rate-badge">R130 <span class="pp">pp</span></span></li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">3+ learners package <span class="badge text-bg-success rate-badge">R100 <span class="pp">pp</span></span></li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h6 class="mb-2">Online lessons</h6>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item d-flex justify-content-between align-items-center">One-on-one with tutor <span class="badge text-bg-success rate-badge">R150</span></li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">2 learners package <span class="badge text-bg-success rate-badge">R130 <span class="pp">pp</span></span></li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">3+ learners package <span class="badge text-bg-success rate-badge">R100 <span class="pp">pp</span></span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Discounts -->
+          <div class="row mt-4">
+            <div class="col-12">
+              <div class="card shadow-sm">
+                <div class="card-body">
+                  <h4 class="h6 mb-3">Payment discounts</h4>
+                  <ul class="mb-0">
+                    <li>5% discount on 3 months lessons paid in advance</li>
+                    <li>8% discount on 6 months lessons paid in advance</li>
+                    <li>12% discount on 9 months lessons paid in advance</li>
+                    <li>15% discount on 12 months lessons paid in advance</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Quote Calculator -->
+          <div class="row mt-4">
+            <div class="col-12">
+              <div class="card shadow-sm">
+                <div class="card-body">
+                  <h4 class="h6 mb-3">Quick quote (optional)</h4>
+                  <div class="row g-3 align-items-end">
+                    <div class="col-md-3">
+                      <label for="qqGrade" class="form-label">Grade band</label>
+                      <select id="qqGrade" class="form-select">
+                        <option value="g7_12">Grades 7–12</option>
+                        <option value="g1_6">Grades 1–6</option>
+                      </select>
+                    </div>
+                    <div class="col-md-3">
+                      <label for="qqMode" class="form-label">Lesson type</label>
+                      <select id="qqMode" class="form-select">
+                        <option value="face">Face-to-face</option>
+                        <option value="online">Online</option>
+                      </select>
+                    </div>
+                    <div class="col-md-3">
+                      <label for="qqGroup" class="form-label">Group size</label>
+                      <select id="qqGroup" class="form-select">
+                        <option value="one">One-on-one</option>
+                        <option value="two">2 learners</option>
+                        <option value="threePlus">3+ learners</option>
+                      </select>
+                    </div>
+                    <div class="col-md-3">
+                      <label for="qqDiscount" class="form-label">Upfront payment</label>
+                      <select id="qqDiscount" class="form-select">
+                        <option value="0">None</option>
+                        <option value="5">3 months (5%)</option>
+                        <option value="8">6 months (8%)</option>
+                        <option value="12">9 months (12%)</option>
+                        <option value="15">12 months (15%)</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="row g-3 mt-3">
+                    <div class="col-md-3">
+                      <label for="qqHours" class="form-label">Hours</label>
+                      <input id="qqHours" type="number" min="1" step="1" value="1" class="form-control" />
+                    </div>
+                    <div class="col-md-9 d-flex align-items-center">
+                      <div class="p-3 bg-light rounded w-100">
+                        <div class="d-flex justify-content-between"><span>Hourly rate</span><strong id="qqHourly">R0</strong></div>
+                        <div class="d-flex justify-content-between"><span>Discounted hourly rate</span><strong id="qqHourlyDiscounted">R0</strong></div>
+                        <hr class="my-2" />
+                        <div class="d-flex justify-content-between"><span>Estimated total</span><strong id="qqTotal">R0</strong></div>
+                        <small class="text-muted">For guidance only. Final quotes may vary based on schedule and location.</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="booking.html" class="btn btn-primary">Go to Book</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Click handler to open modal with subject name
+    const subjectButtons = document.querySelectorAll('.subject-btn');
+    const modalEl = document.getElementById('pricingModal');
+    const modalSubject = document.getElementById('modalSubject');
+    const bsModal = new bootstrap.Modal(modalEl);
+
+    subjectButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const subject = btn.dataset.subject || btn.textContent.trim();
+        modalSubject.textContent = subject;
+        bsModal.show();
+      });
+    });
+
+    // Quick quote calculator
+    const rates = {
+      g7_12: {
+        face: { one: 200, two: 150, threePlus: 120 },
+        online: { one: 170, two: 150, threePlus: 120 }
+      },
+      g1_6: {
+        face: { one: 170, two: 130, threePlus: 100 },
+        online: { one: 150, two: 130, threePlus: 100 }
+      }
+    };
+
+    const discountMap = { 0: 0, 5: 0.05, 8: 0.08, 12: 0.12, 15: 0.15 };
+
+    const qqGrade = document.getElementById('qqGrade');
+    const qqMode = document.getElementById('qqMode');
+    const qqGroup = document.getElementById('qqGroup');
+    const qqDiscount = document.getElementById('qqDiscount');
+    const qqHours = document.getElementById('qqHours');
+
+    const qqHourly = document.getElementById('qqHourly');
+    const qqHourlyDiscounted = document.getElementById('qqHourlyDiscounted');
+    const qqTotal = document.getElementById('qqTotal');
+
+    function formatZAR(n) { return 'R' + Math.round(n); }
+
+    function updateQuote() {
+      const grade = qqGrade.value;             // g7_12 | g1_6
+      const mode = qqMode.value;               // face | online
+      const group = qqGroup.value;             // one | two | threePlus
+      const hours = Math.max(1, parseInt(qqHours.value || '1', 10));
+      const discountPct = discountMap[qqDiscount.value] || 0;
+
+      const base = rates[grade][mode][group];
+      const discounted = base * (1 - discountPct);
+
+      qqHourly.textContent = formatZAR(base) + (group !== 'one' ? ' pp' : '');
+      qqHourlyDiscounted.textContent = formatZAR(discounted) + (group !== 'one' ? ' pp' : '');
+      qqTotal.textContent = formatZAR(discounted * hours) + (group !== 'one' ? ' pp' : '');
+    }
+
+    [qqGrade, qqMode, qqGroup, qqDiscount, qqHours].forEach(el => el.addEventListener('input', updateQuote));
+
+    // initialise quote values on first open
+    modalEl.addEventListener('shown.bs.modal', updateQuote);
+  </script>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+    <div class="container">
+        <p>&copy; 2025 Your Tutoring Company. All rights reserved.</p>
+        <p>
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms of Service</a>
+        </p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
